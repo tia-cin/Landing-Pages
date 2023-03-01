@@ -8,3 +8,26 @@ html, body {
     overflow: hidden;
     font-family: poppins;
 }
+
+.line-one {
+    position: fixed;
+    width: 15px;
+    height: 100vh;
+    background-color: #ff6700;
+    left: 23%;
+}
+
+.line-two {
+    position: fixed;
+    width: 25px;
+    height: 100vh;
+    background-color: #004e98;
+    left: 25%;
+}
+
+.img img {
+    position: relative;
+    width: 450px;
+    left: 8.5%;
+    top: -70px;
+}
