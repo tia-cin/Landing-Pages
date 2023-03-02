@@ -41,16 +41,16 @@ html, body {
 }
 
 .menu {
-    position: fixe;
-    right: 100px;
+    position: fixed;
+    left: 100px;
 }
 
  /* Image */
 .img img {
     position: relative;
     width: 450px;
-    left: 8.5%;
-    top: -70px;
+    left: 10%;
+    top: 70px;
 }
 
 /* Title */
@@ -60,16 +60,17 @@ html, body {
     font-size: 100px;
     font-weight: 700;
     letter-spacing: -6px;
-    line-height: .5;
+    line-height: .7;
     position: fixed;
     position: absolute;
 }
 
 .title p {
-    position: relative;
-    left: 8.5%;
-    top: -70px;
-    width: 450px;
+    font-size: 25px;
+    font-weight: 300;
+    color: #c0c0c0;
+    letter-spacing: 10px;
+    left: 150px;
 }
 
 .year {
@@ -83,7 +84,7 @@ html, body {
 /* Button */
 .btn a {
     position: relative;
-    bottom: 260px;
+    bottom: 100px;
     right: -57%;
     color: #eee;
     background-color: #ff6700;
