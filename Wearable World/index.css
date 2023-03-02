@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;700&display=swap');
 
+ /* Set up */
 html, body {
     margin: 0;
     padding: 0;
@@ -9,6 +10,7 @@ html, body {
     font-family: poppins;
 }
 
+ /* Lines */
 .line-one {
     position: fixed;
     width: 15px;
@@ -25,6 +27,15 @@ html, body {
     left: 25%;
 }
 
+ /* Logo */
+.logo {
+    position: fixed;
+    left: 120px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+ /* Image */
 .img img {
     position: relative;
     width: 450px;
@@ -32,6 +43,7 @@ html, body {
     top: -70px;
 }
 
+ /* Navbar */
 nav {
     z-index: 2;
     display: flex;
@@ -51,4 +63,48 @@ nav ul li {
     display: inline-block;
     list-style: none;
     margin: 10px 30px;
+}
+
+nav ul li a {
+    color: #000;
+    text-decoration: none;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+nav ul li a::after {
+    width: 0;
+    height: 3px;
+    bottom: -5px;
+    left: 50%;
+    content: '';
+    position: absolute;
+    background-color: #ff6700;
+    transform: translateX(-50%);
+    transition: width .4s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+ /* Media */
+.media ul {
+    right: 20px;
+    top: 63%;
+    padding: 10px;
+    position: fixed;
+    list-style: none;
+}
+
+.media ul li {
+    font-size: 18px;
+    margin: 24px 0;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.media ul li:hover {
+    transform: scale(1.8)
 }
