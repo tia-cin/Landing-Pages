@@ -85,3 +85,39 @@ html, body {
     background: url(5.png) 50% 50% no-repeat;
     background-size: cover;
 }
+
+
+/* Titles */
+.title span {
+    font-size: 150px;
+    text-transform: uppercase;
+    color: #eee;
+    top: 40%;
+    position: absolute;
+    left: 170px;
+    letter-spacing: 50px;
+    font-weight: bolder;
+    z-index: 2;
+}
+
+.side-icon {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 40px;
+    font-size: 40px;
+    top: 45%;
+}
+
+.bottom-bar {
+    width: 100%;
+    bottom: 40px;
+    margin: 20px auto;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    text-transform: uppercase;
+    color: #171717;
+    letter-spacing: 4px;
+}
