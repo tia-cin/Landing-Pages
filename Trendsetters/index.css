@@ -121,3 +121,17 @@ html, body {
     color: #171717;
     letter-spacing: 4px;
 }
+
+/* Social Medias */
+.media ul {
+    list-style: none;
+    right: 40px;
+    top: 65%;
+    padding: 10px;
+    position: fixed;
+}
+
+.media ul li {
+    font-size: 20px;
+    margin: 24px 0;
+}
