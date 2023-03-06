@@ -29,8 +29,8 @@ html, body {
 }
 
 .navbar .logo {
-    right: 500px;
     position: relative;
+    right: 500px;
     font-weight: 600;
     font-size: 11px;
     text-transform: uppercase;
@@ -38,7 +38,7 @@ html, body {
 
 /* Photo */
 .img img {
-    width: 47%;
+    width: 66%;
 }
 
 .img {
@@ -46,4 +46,190 @@ html, body {
     top: 10.6%;
     left: 47%;
     z-index: 0;
+    opacity: 0;
+    animation: img-appear 1s linear forwards;
+    animation-delay: 2.4s;
+}
+
+.img::after {
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #ccc;
+    animation: rev-img 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+    animation-delay: 2s;
+    content: "";
+}
+
+/* Titles */
+.title {
+    position: absolute;
+    top: 240px;
+    left: 290px;
+    z-index: 2;
+}
+
+.title h1 {
+    position: relative;
+    width: 600px;
+    height: 150px;
+    margin-bottom: 20px;
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: -5px;
+}
+
+.title h1 .text-one {
+    position: absolute;
+}
+
+.title h1 .text-one label {
+    color: #ccc;
+}
+
+.title h2 {
+    position: absolute;
+    top: -65px;
+    left: -13px;
+    font-size: 180px;
+    font-weight: 900;
+    color: #ccc;
+    letter-spacing: 2px;
+    z-index: -1;
+}
+
+.title h2 span {
+    font-size: 220px;
+}
+
+.title h3 {
+    position: relative;
+    top: -140px;
+    height: 150px;
+    font-size: 60px;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: .8;
+}
+
+.title h3 .text-two {
+    position: absolute;
+}
+
+.title h3 .text-two label {
+    position: relative;
+    top: 55px;
+    left: -155px;
+    font-size: 65px;
+}
+
+.title p {
+    position: relative;
+    top: -65px;
+    width: 1000px;
+    height: 110px;
+    font-size: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+/* Tag, Line & Button*/
+.tag {
+    position: fixed;
+    top: 166px;
+    left: 70%;
+    padding: 10px 30px;
+    color: rgb(175, 175, 175);
+    font-weight: 500;
+}
+
+.line {
+    position: fixed;
+    width: 230px;
+    height: 1px;
+    left: 71.5%;
+    top: 200px;
+    background-color: #111;
+}
+
+button {
+    position: relative;
+    left: 1200px;
+    bottom: -290px;
+    padding: 20px 30px;
+    font-weight: 900;
+    border: none;
+    background-color: #dab89c;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 10px;
+}
+
+/* Social Media*/
+.media {
+    position: absolute;
+    left: -120px;
+    top: 50%;
+    transform: rotate(-90deg);
+}
+
+.media ul {
+    list-style: none;
+}
+
+.media ul li {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.media ul li:not(:last-child) {
+    padding-right: 60px;
+}
+
+/* Arrows */
+.left-right {
+    position: absolute;
+    right: 40px;
+    bottom: -3%;
+}
+
+.left-right ul {
+    list-style: none;
+}
+
+.left-right ul li {
+    display: inline-block;
+    margin: 20px 20px 20px 0;
+    padding: 10px 15px;
+    font-size: 27px;
+}
+
+/* Animations */
+@keyframes img-appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes rev-img {
+    0% {
+        left: 0%;
+        width: 0%;
+    }
+    50% {
+        left: 0%;
+        width: 47%;
+    }
+    100% {
+        left: 47%;
+        width: 0%;
+    }
 }
