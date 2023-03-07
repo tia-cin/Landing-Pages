@@ -6,9 +6,9 @@ anime.timeline().add({
     targets: ".title .letter",
     translateY: [200, 0],
     easing: "easeOutExpo",
-    duration: 1700,
     opacity: 1,
-    delay: (el, i) => 400 + 70 * i
+    duration: 1700,
+    delay: (e, i) => 400 + 70 * i
 })
 
 TweenMax.from(".scrolldown", 1.5, {
