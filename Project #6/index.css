@@ -18,6 +18,9 @@ body {
     margin-left: 115px;
     color: #fff000;
     overflow: hidden;
+}
+
+.title, .letter {
     display: inline-block;
     line-height: 2em;
 }
