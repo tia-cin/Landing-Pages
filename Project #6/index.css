@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Poppins:ital,wght@0,200;0,600;0,900;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body {
+    background-color: #111;
+    font-family: 'poppins', sans-serif;
+}
+
+.title {
+    font-size: 20em;
+    margin-top: 5rem;
+    margin-left: 115px;
+    color: #fff000;
+    overflow: hidden;
+}
