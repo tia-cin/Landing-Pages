@@ -7,7 +7,7 @@ export const Navbar: () => JSX.Element = () => {
         <div className='w-1/2'>
             <ul className='flex justify-around'>
                 <li><a href='#home'>home</a></li>
-                <li><a href='#projects'>projects</a></li>
+                <li><a href='#projects'>templates</a></li>
                 <li><a href='#about-us'>about us</a></li>
             </ul>
         </div>

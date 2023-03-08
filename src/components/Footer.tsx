@@ -11,7 +11,7 @@ export const Footer: () => JSX.Element = () => {
             <p className='text-center'><span className='italic'>"Design is thinking made visual."</span> - Saul Bass</p>
             <ul className='flex justify-around'>
                 <li><a href='#about-us'>about us</a></li>
-                <li><a href='#projects'>projects</a></li>
+                <li><a href='#projects'>templates</a></li>
                 <li><a href='#home'>back to top</a></li>
             </ul>
         </div>
