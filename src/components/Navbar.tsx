@@ -9,7 +9,6 @@ export const Navbar: () => JSX.Element = () => {
                 <li><a href='#home'>home</a></li>
                 <li><a href='#projects'>projects</a></li>
                 <li><a href='#about-us'>about us</a></li>
-                <li><a href='#contact'>contact</a></li>
             </ul>
         </div>
     </nav>
