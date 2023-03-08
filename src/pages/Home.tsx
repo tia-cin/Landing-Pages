@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Home: React.FC = () => {
   return (
-    <div id='home' className='pt-28 flex justify-around items-center'>
+    <div id='home' className='flex justify-around items-center h-screen'>
         <div className='w-2/6'>
             <h2 className='text-4xl mb-2'>Welcome to our wide selection of web template designs!</h2>
             <p>Whether you're a web designer looking for inspiration or a business owner in need of a website, we've got you covered. Our templates are designed to be modern, responsive, and user-friendly, so you can create a website that not only looks great but also performs well. From sleek corporate designs to fun and creative layouts, our templates are fully customizable to suit your needs. Take a look at our collection and find the perfect template for your next project.</p>

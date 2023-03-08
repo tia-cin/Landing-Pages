@@ -6,10 +6,10 @@ export const Navbar: () => JSX.Element = () => {
         <div className='text-xl italic'>Landing Pages</div>
         <div className='w-1/2'>
             <ul className='flex justify-around'>
-                <li>Home</li>
-                <li>Projects</li>
-                <li>Contact</li>
-                <li>About</li>
+                <li><a href='#home'>home</a></li>
+                <li><a href='#projects'>projects</a></li>
+                <li><a href='#about-us'>about us</a></li>
+                <li><a href='#contact'>contact</a></li>
             </ul>
         </div>
     </nav>
