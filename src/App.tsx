@@ -1,8 +1,13 @@
 import React from 'react';
+import { Footer } from './components/Footer';
+import { Navbar } from './components/Navbar';
 
 function App() {
   return (
-    <p className='bold text-3xl font-bold underline'>hello</p>
+    <div className='w-full h-screen p-0 m-0 bg-light-gray text-black'>
+      <Navbar/>
+      <Footer/>
+    </div>
   );
 }
 
