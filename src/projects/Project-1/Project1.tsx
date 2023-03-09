@@ -1,85 +1,78 @@
 import React from "react";
 import "./index.css";
 import watch from "./watch.png";
-import { TweenMax, Expo, Power3, gsap } from "gsap";
+import { BsSearch, BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
+import { HiOutlineBars3 } from "react-icons/hi2";
+import { Expo, Power3, gsap } from "gsap";
 
 export const Project1 = () => {
-  // React.useEffect(() => {
-  //   gsap.from(".logo", 1, {
-  //     opacity: 0,
-  //     x: -20,
-  //     ease: Expo.easeInOut,
-  //   });
+  React.useEffect(() => {
+    gsap.fromTo(
+      ".logo",
+      { duration: 1, opacity: 0 },
+      { duration: 1, opacity: 1, x: 20, ease: Expo.easeOut }
+    );
 
-  //   gsap.from("nav ul li", 1, {
-  //     opacity: 0,
-  //     x: -20,
-  //     ease: Power3.easeInOut,
-  //   });
+    gsap.fromTo(
+      "nav ul li",
+      { duration: 1, opacity: 0 },
+      { duration: 1, opacity: 1, x: -20, ease: Power3.easeInOut }
+    );
 
-  //   gsap.from(".search", 1, {
-  //     opacity: 0,
-  //     delay: 0.5,
-  //     x: -20,
-  //     ease: Expo.easeInOut,
-  //   });
+    gsap.fromTo(
+      ".search",
+      { duration: 1, opacity: 0 },
+      { duration: 1, opacity: 1, delay: 0.5, x: -20, ease: Expo.easeInOut }
+    );
 
-  //   gsap.from(".menu", 1, {
-  //     opacity: 0,
-  //     deplay: 0.6,
-  //     x: -20,
-  //     ease: Expo.easeInOut,
-  //   });
+    gsap.fromTo(
+      ".menu",
+      { duration: 1, opacity: 0 },
+      { duration: 1, opacity: 1, deplay: 0.6, x: -20, ease: Expo.easeInOut }
+    );
 
-  //   gsap.from(".title", 1, {
-  //     opacity: 0,
-  //     delay: 1,
-  //     y: 20,
-  //     ease: Expo.easeInOut,
-  //   });
+    gsap.fromTo(
+      ".title",
+      { duration: 1, opacity: 0 },
+      { duration: 1, opacity: 1, delay: 1, y: 20, ease: Expo.easeInOut }
+    );
 
-  //   gsap.from(".btn", 1, {
-  //     opacity: 0,
-  //     deplay: 1.6,
-  //     y: 20,
-  //     ease: Expo.easeInOut,
-  //   });
+    gsap.fromTo(
+      ".btn",
+      { duration: 1, opacity: 0 },
+      { duration: 1, opacity: 1, deplay: 1.6, y: 20, ease: Expo.easeInOut }
+    );
 
-  //   gsap.from(".line-one", 1, {
-  //     opacity: 0,
-  //     delay: 2,
-  //     y: -800,
-  //     ease: Expo.easeInOut,
-  //   });
+    gsap.fromTo(
+      ".line-one",
+      { duration: 1, opacity: 0 },
+      { duration: 1, opacity: 1, delay: 2, y: -800, ease: Expo.easeInOut }
+    );
 
-  //   gsap.from(".line-two", 1, {
-  //     opacity: 0,
-  //     delay: 2.5,
-  //     y: -800,
-  //     ease: Expo.easeInOut,
-  //   });
+    gsap.fromTo(
+      ".line-two",
+      { duration: 1, opacity: 0 },
+      { duration: 1, opacity: 1, delay: 2.5, y: 800, ease: Expo.easeInOut }
+    );
 
-  //   gsap.from(".img", 2, {
-  //     opacity: 0,
-  //     delay: 2.9,
-  //     y: -800,
-  //     ease: Expo.easeInOut,
-  //   });
+    gsap.fromTo(
+      ".img",
+      { duration: 2, opacity: 0 },
+      { duration: 2, opacity: 1, delay: 2.9, y: -800, ease: Expo.easeInOut }
+    );
 
-  //   gsap.from(".year", 1, {
-  //     opacity: 0,
-  //     delay: 1.4,
-  //     y: -20,
-  //     ease: Expo.easeInOut,
-  //   });
+    gsap.fromTo(
+      ".year",
+      { duration: 1, opacity: 0 },
+      { duration: 1, opacity: 1, delay: 1.4, y: -20, ease: Expo.easeInOut }
+    );
 
-  //   gsap.from(".media ul li", 2, {
-  //     opacity: 0,
-  //     delay: 3.2,
-  //     y: 40,
-  //     ease: Expo.easeInOut,
-  //   });
-  // }, []);
+    gsap.fromTo(
+      ".media ul li",
+      { duration: 2, opacity: 0 },
+      { duration: 2, opacity: 1, delay: 3.2, y: 40, ease: Expo.easeInOut }
+    );
+  }, []);
   return (
     <div className="container">
       <div className="stripes">
@@ -97,10 +90,10 @@ export const Project1 = () => {
           <li>contact</li>
         </ul>
         <div className="search">
-          <i className="fa fa-search"></i>
+          <BsSearch />
         </div>
         <div className="menu">
-          <i className="fa fa-bars"></i>
+          <HiOutlineBars3 />
         </div>
       </nav>
 
@@ -120,13 +113,13 @@ export const Project1 = () => {
       <div className="media">
         <ul>
           <li>
-            <i className="fa fa-facebook"></i>
+            <BsFacebook />
           </li>
           <li>
-            <i className="fa fa-instagram"></i>
+            <BsInstagram />
           </li>
           <li>
-            <i className="fa fa-twitter"></i>
+            <BsTwitter />
           </li>
         </ul>
       </div>

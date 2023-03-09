@@ -34,6 +34,7 @@ body {
   left: 120px;
   font-weight: bold;
   text-transform: uppercase;
+  opacity: 1;
 }
 
 .search {
