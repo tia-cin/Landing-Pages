@@ -45,20 +45,20 @@ export const Project1 = () => {
 
     gsap.fromTo(
       ".line-one",
-      { duration: 1, opacity: 0 },
-      { duration: 1, opacity: 1, delay: 2, y: -800, ease: Expo.easeInOut }
+      { duration: 1, opacity: 0, y: -800 },
+      { duration: 1, opacity: 1, delay: 2, y: 0, ease: Expo.easeInOut }
     );
 
     gsap.fromTo(
       ".line-two",
-      { duration: 1, opacity: 0 },
-      { duration: 1, opacity: 1, delay: 2.5, y: 800, ease: Expo.easeInOut }
+      { duration: 1, opacity: 0, y: -800 },
+      { duration: 1, opacity: 1, delay: 2.5, y: 0, ease: Expo.easeInOut }
     );
 
     gsap.fromTo(
       ".img",
-      { duration: 2, opacity: 0 },
-      { duration: 2, opacity: 1, delay: 2.9, y: -800, ease: Expo.easeInOut }
+      { duration: 2, opacity: 0, y: -800 },
+      { duration: 2, opacity: 1, delay: 2.9, y: 0, ease: Expo.easeInOut }
     );
 
     gsap.fromTo(
