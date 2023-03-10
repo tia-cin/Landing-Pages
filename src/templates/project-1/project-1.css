@@ -7,7 +7,7 @@
   font-family: poppins;
 }
 
-.line-one {
+.project-1 .line-one {
   position: fixed;
   width: 15px;
   height: 100vh;
@@ -15,7 +15,7 @@
   left: 23%;
 }
 
-.line-two {
+.project-1 .line-two {
   position: fixed;
   width: 25px;
   height: 100vh;
@@ -23,7 +23,7 @@
   left: 25%;
 }
 
-nav {
+.project-1 nav {
   z-index: 2;
   display: flex;
   width: 100%;
@@ -32,19 +32,19 @@ nav {
   padding: 5px 0;
 }
 
-nav ul {
+.project-1 nav ul {
   flex: 1;
   text-align: right;
   padding-right: 270px;
 }
 
-nav ul li {
+.project-1 nav ul li {
   display: inline-block;
   list-style: none;
   margin: 10px 30px;
 }
 
-nav ul li a {
+.project-1 nav ul li a {
   color: #000;
   text-decoration: none;
   position: relative;
@@ -52,7 +52,7 @@ nav ul li a {
   font-size: 14px;
 }
 
-nav ul li a::after {
+.project-1 nav ul li a::after {
   content: "";
   width: 0;
   height: 3px;
@@ -64,35 +64,35 @@ nav ul li a::after {
   transition: width 0.4s;
 }
 
-nav ul li a:hover::after {
+.project-1 nav ul li a:hover::after {
   width: 100%;
 }
 
-.logo {
+.project-1 .logo {
   position: fixed;
   left: 120px;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-.search {
+.project-1 .search {
   position: fixed;
   right: 160px;
 }
 
-.menu {
+.project-1 .menu {
   position: fixed;
   right: 100px;
 }
 
-.img img {
+.project-1 .watch-img img {
   position: relative;
   width: 450px;
   left: 10%;
   top: -70px;
 }
 
-.title {
+.project-1 .title {
   position: fixed;
   position: absolute;
   top: 276px;
@@ -103,7 +103,7 @@ nav ul li a:hover::after {
   letter-spacing: -6px;
 }
 
-.title p {
+.project-1 .title p {
   font-size: 25px;
   font-weight: 300;
   color: grey;
@@ -112,7 +112,7 @@ nav ul li a:hover::after {
   letter-spacing: 10px;
 }
 
-.btn a {
+.project-1 .btn a {
   position: relative;
   text-decoration: none;
   bottom: 50px;
@@ -125,12 +125,12 @@ nav ul li a:hover::after {
   transition: 0.4s;
 }
 
-.btn a:hover {
+.project-1 .btn a:hover {
   background: #000;
   color: #fff;
 }
 
-.year {
+.project-1 .year {
   font-weight: 700;
   position: fixed;
   top: 556px;
@@ -138,7 +138,7 @@ nav ul li a:hover::after {
   padding: 10px 30px;
 }
 
-.media ul {
+.project-1 .media ul {
   list-style: none;
   position: fixed;
   right: 20px;
@@ -146,13 +146,13 @@ nav ul li a:hover::after {
   padding: 10px 10px;
 }
 
-.media ul li {
+.project-1 .media ul li {
   cursor: pointer;
   font-size: 18px;
   margin: 24px 0;
   transition: 0.3s;
 }
 
-.media ul li:hover {
+.project-1 .media ul li:hover {
   transform: scale(1.8);
 }

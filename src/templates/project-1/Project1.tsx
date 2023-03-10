@@ -60,7 +60,7 @@ const Project1 = () => {
     );
 
     gsap.fromTo(
-      ".img",
+      ".watch-img",
       { duration: 2, opacity: 0, y: -800 },
       { duration: 2, opacity: 1, delay: 2.9, y: 180, ease: Expo.easeInOut }
     );
@@ -101,7 +101,7 @@ const Project1 = () => {
         </div>
       </nav>
 
-      <div className="img">
+      <div className="watch-img">
         <img src={watch} alt="smart-watch" />
       </div>
 
