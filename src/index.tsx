@@ -4,7 +4,7 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Project1, Project2, Project3, Project4 } from "./templates";
+import { Project1 } from "./templates";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -15,9 +15,6 @@ root.render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/templates/project-1" element={<Project1 />} />
-        <Route path="/templates/project-2" element={<Project2 />} />
-        <Route path="/templates/project-3" element={<Project3 />} />
-        <Route path="/templates/project-4" element={<Project4 />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
