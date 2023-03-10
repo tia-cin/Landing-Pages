@@ -17,24 +17,6 @@ import { gsap, Expo, Power3 } from "gsap";
 const Project3 = () => {
   React.useEffect(() => {
     gsap.fromTo(
-      ".first",
-      { duration: 1.5, left: -100 },
-      { duration: 1.5, delay: 0.2, left: 0, ease: Expo.easeInOut }
-    );
-
-    gsap.fromTo(
-      ".second",
-      { duration: 1.5, left: -100 },
-      { duration: 1.5, delay: 0.4, left: 0, ease: Expo.easeInOut }
-    );
-
-    gsap.fromTo(
-      ".third",
-      { duration: 1.5, left: -100 },
-      { duration: 1.5, delay: 0.6, left: 0, ease: Expo.easeInOut }
-    );
-
-    gsap.fromTo(
       ".logo",
       { duration: 1, opacity: 0 },
       { duration: 1, delay: 1, opacity: 1, x: -20, ease: Expo.easeInOut }
@@ -96,8 +78,8 @@ const Project3 = () => {
     );
     gsap.fromTo(
       ".product-img",
-      { duration: 1, opacity: 0 },
-      { duration: 1, delay: 4.2, opacity: 1, y: -800, ease: Expo.easeInOut }
+      { duration: 1, opacity: 0, y: -800 },
+      { duration: 1, delay: 4.2, opacity: 1, y: -300, ease: Expo.easeInOut }
     );
     gsap.fromTo(
       ".product-desc p",
@@ -111,10 +93,8 @@ const Project3 = () => {
     );
   }, []);
   return (
-    <div className="container">
-      <div className="overlay first"></div>
-      <div className="overlay second"></div>
-      <div className="overlay third"></div>
+    <div className="project-3">
+      <div className="overlay"></div>
 
       <div className="nav">
         <div className="logo">
@@ -143,8 +123,8 @@ const Project3 = () => {
       </div>
 
       <div className="size">
+        <span>Size :</span>
         <ul>
-          <span>Size :</span>
           <li>7</li>
           <li>8</li>
           <li>9</li>
