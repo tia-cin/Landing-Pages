@@ -14,7 +14,7 @@ import {
   BsArrowLeft,
   BsArrowRight,
 } from "react-icons/bs";
-import { gsap, Expo, Power3 } from "gsap";
+import { gsap, Expo } from "gsap";
 
 const Project2 = () => {
   React.useEffect(() => {
