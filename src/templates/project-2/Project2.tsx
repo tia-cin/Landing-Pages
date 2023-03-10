@@ -59,11 +59,11 @@ const Project2 = () => {
     <div className="project-2">
       <div className="navbar">
         <div className="logo">
-          <span>New York</span>
+          <span>Brand</span>
         </div>
         <div className="search">
-          <BsSearch className="icn" />
-          <BsList className="icn" />
+          <BsSearch />
+          <BsList />
         </div>
       </div>
 
@@ -76,16 +76,16 @@ const Project2 = () => {
       </div>
 
       <div className="title">
-        <span>newyork</span>
+        <span>stylebrand</span>
       </div>
 
       <div className="side-icon">
-        <BsArrowLeft />
-        <BsArrowRight />
+        <BsArrowLeft className="icn" />
+        <BsArrowRight className="icn" />
       </div>
 
       <div className="bottom-bar">
-        <div>vogue fashion</div>
+        <div>street fashion</div>
         <div>2022</div>
         <div>design brand</div>
       </div>
