@@ -7,7 +7,7 @@ import {
   BsArrowRight,
   BsScissors,
 } from "react-icons/bs";
-import { gsap, Expo, Power3 } from "gsap";
+import { gsap, Expo } from "gsap";
 
 const Project4: React.FC = () => {
   React.useEffect(() => {
