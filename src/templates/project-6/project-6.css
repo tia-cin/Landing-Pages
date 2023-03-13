@@ -1,0 +1,61 @@
+.project-6 {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: #111;
+  font-family: "Montserrat", sans-serif;
+  height: 100vh;
+}
+
+.title {
+  font-size: 20em;
+  margin-top: 5rem;
+  margin-left: 115px;
+  color: #fff000;
+  overflow: hidden;
+}
+
+.title,
+.letter {
+  display: inline-block;
+  line-height: 2em;
+}
+
+.menu {
+  position: absolute;
+  bottom: 48%;
+  right: -160px;
+  padding: 0 10px;
+  transform: rotate(-90deg);
+}
+
+.menu ul li {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 300;
+  padding: 10px 25px;
+  color: #ccc;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+
+.scrolldown {
+  position: absolute;
+  top: 450px;
+  left: 80px;
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: #ccc;
+  transform: rotate(-90deg);
+}
+
+.scrolldown::before {
+  display: inline-block;
+  width: 50px;
+  margin-right: 10px;
+  transform: translateY(-2px);
+  opacity: 0.5;
+  content: "";
+  border: 2px solid #ccc;
+}

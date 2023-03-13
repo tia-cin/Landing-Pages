@@ -5,7 +5,7 @@ import "./project-5.css";
 import { BsList, BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
 import { gsap, Expo, Circ } from "gsap";
 
-const Project5 = () => {
+const Project5: React.FC = () => {
   React.useEffect(() => {
     gsap.fromTo(
       ".navbar",
