@@ -114,12 +114,12 @@ const Project3 = () => {
       <img src={shoe1} alt="black-sneaker" className="product-img" />
 
       <div className="product-text">
-        <h1 className="product-title">adidas.</h1>
+        <h1 className="product-title">brand.</h1>
       </div>
 
       <div className="product-desc">
-        <p>The pure comfort is here !</p>
-        <button>reserve now</button>
+        <p>Lorem Ipsum serti gum !</p>
+        <button>start now</button>
       </div>
 
       <div className="size">
