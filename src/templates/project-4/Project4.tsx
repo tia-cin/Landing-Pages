@@ -90,7 +90,7 @@ const Project4: React.FC = () => {
     );
   }, []);
   return (
-    <div className="project-4">
+    <div className="project-4 overflow-hidden">
       <nav className="navbar">
         <div className="logo-icon">
           <BsScissors />
