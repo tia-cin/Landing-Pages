@@ -11,6 +11,7 @@ import {
   Project4,
   Project5,
   Project6,
+  Project7,
 } from "./templates";
 
 const root = ReactDOM.createRoot(
@@ -27,6 +28,7 @@ root.render(
         <Route path="/templates/project-4" element={<Project4 />} />
         <Route path="/templates/project-5" element={<Project5 />} />
         <Route path="/templates/project-6" element={<Project6 />} />
+        <Route path="/templates/project-7" element={<Project7 />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

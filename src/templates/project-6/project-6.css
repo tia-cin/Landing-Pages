@@ -8,7 +8,7 @@
   height: 100vh;
 }
 
-.title {
+.project-6 .title {
   font-size: 20em;
   margin-top: 5rem;
   margin-left: 115px;
@@ -16,13 +16,13 @@
   overflow: hidden;
 }
 
-.title,
-.letter {
+.project-6 .title,
+.project-6 .letter {
   display: inline-block;
   line-height: 2em;
 }
 
-.menu {
+.project-6 .menu {
   position: absolute;
   bottom: 48%;
   right: -160px;
@@ -30,7 +30,7 @@
   transform: rotate(-90deg);
 }
 
-.menu ul li {
+.project-6 .menu ul li {
   display: inline-block;
   font-size: 12px;
   font-weight: 300;
@@ -40,7 +40,7 @@
   letter-spacing: 2px;
 }
 
-.scrolldown {
+.project-6 .scrolldown {
   position: absolute;
   top: 450px;
   left: 80px;
@@ -50,7 +50,7 @@
   transform: rotate(-90deg);
 }
 
-.scrolldown::before {
+.project-6 .scrolldown::before {
   display: inline-block;
   width: 50px;
   margin-right: 10px;
