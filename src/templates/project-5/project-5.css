@@ -14,7 +14,7 @@
   justify-content: space-between;
   height: 80px;
   align-items: center;
-  color: #555555;
+  color: #555;
   padding: 0 50px;
 }
 
@@ -53,8 +53,8 @@
 }
 
 .project-5 .coke {
-  position: absolute;
-  top: 50%;
+  position: relative;
+  top: 40%;
   left: 30%;
   z-index: 1;
 }
@@ -86,36 +86,36 @@
 }
 
 .project-5 .small-coke li img {
-  max-width: 250px;
+  max-width: 50px;
 }
 
 .project-5 .text {
   position: absolute;
   top: 200px;
-  left: 500px;
+  left: 700px;
 }
 
 .project-5 .text h1 {
   font-size: 70px;
   text-transform: uppercase;
   font-weight: 900;
-  color: #555555;
+  color: #555;
   margin-bottom: 20px;
   position: relative;
   overflow: hidden;
   height: 150px;
-  width: 900px;
+  width: 500px;
 }
 
 .project-5 .text h1 .header {
   position: absolute;
-  bottom: 25px;
+  bottom: -25px;
 }
 
 .project-5 .text h2 {
   position: absolute;
   font-family: "Josefin Sans", sans-serif;
-  top: 100px;
+  top: 80px;
   left: 80px;
   color: #f4f2ec;
   font-size: 100px;
@@ -125,11 +125,11 @@
 .project-5 .text p {
   width: 400px;
   font-size: 12px;
-  margin-top: 45px;
+  margin-top: 85px;
   margin-left: 50px;
   position: relative;
   height: 110px;
-  color: #555555;
+  color: #555;
   font-weight: 600;
 }
 
@@ -145,6 +145,6 @@
 }
 
 .project-5 .media ul li {
-  color: #555555;
+  color: #555;
   padding: 10px 0;
 }

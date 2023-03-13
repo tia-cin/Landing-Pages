@@ -21,14 +21,14 @@ const Project5 = () => {
 
     gsap.fromTo(
       ".coke",
-      { duration: 1, opacity: 0 },
-      { duration: 1, delay: 1.4, opacity: 1, y: -1000, ease: Circ.easeInOut }
+      { duration: 1, opacity: 0, y: -1000 },
+      { duration: 1, delay: 1.4, opacity: 1, y: 0, ease: Circ.easeInOut }
     );
 
     gsap.fromTo(
       ".header",
-      { duration: 2 },
-      { duration: 2, delay: 1.8, x: -600, ease: Circ.easeInOut }
+      { duration: 2, x: -600 },
+      { duration: 2, delay: 1.8, x: 0, ease: Circ.easeInOut }
     );
 
     gsap.fromTo(
@@ -39,8 +39,8 @@ const Project5 = () => {
 
     gsap.fromTo(
       ".text .para",
-      { duration: 1.2 },
-      { duration: 1.2, delay: 3.9, opacity: 0, y: 40, ease: Circ.easeInOut }
+      { duration: 1.2, opacity: 0, y: 40 },
+      { duration: 1.2, delay: 3.9, opacity: 1, y: 0, ease: Circ.easeInOut }
     );
 
     gsap.fromTo(
@@ -51,8 +51,8 @@ const Project5 = () => {
 
     gsap.fromTo(
       ".media ul li",
-      { duration: 2 },
-      { duration: 2, delay: 5, opacity: 0, x: -40, ease: Circ.easeInOut }
+      { duration: 2, opacity: 0, x: -40 },
+      { duration: 2, delay: 5, opacity: 1, x: 0, ease: Circ.easeInOut }
     );
   }, []);
 
@@ -63,7 +63,7 @@ const Project5 = () => {
         <div className="categories">
           <ul>
             <li>originals</li>
-            <li>zero</li>
+            <li>light</li>
           </ul>
         </div>
         <div className="menu">
