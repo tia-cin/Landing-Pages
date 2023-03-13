@@ -1,0 +1,228 @@
+.project-4 {
+  margin: 0;
+  padding: 0;
+  background-color: #eee;
+  height: 100vh;
+  font-family: "poppins", sans-serif;
+  overflow: hidden;
+}
+
+.project-4 .navbar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
+}
+
+.project-4 .navbar > div {
+  padding: 50px 30px;
+  margin: 50px;
+  font-size: 20px;
+}
+
+.project-4 .navbar .logo-icon {
+  position: relative;
+  left: -20px;
+}
+
+.project-4 .navbar .logo {
+  position: relative;
+  right: 500px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.project-4 .img img {
+  width: 67%;
+  opacity: 0;
+  animation: img-appear 1s linear forwards;
+  animation-delay: 2.4s;
+}
+
+.project-4 .img {
+  position: fixed;
+  z-index: 0;
+  top: 10.6%;
+  left: 45%;
+}
+
+.project-4 .title {
+  position: absolute;
+  top: 220px;
+  left: 290px;
+  z-index: 2;
+}
+
+.project-4 .title h1 {
+  font-size: 60px;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  position: relative;
+  height: 150px;
+  width: 600px;
+}
+
+.project-4 .title h1 .text-one {
+  position: absolute;
+}
+
+.project-4 .title h1 .text-one label {
+  color: #ccc;
+}
+
+.project-4 .title h2 {
+  position: absolute;
+  bottom: 20px;
+  left: 55px;
+  color: #eda7a7;
+  z-index: -1;
+  font-size: 180px;
+  font-weight: 900;
+  letter-spacing: 4px;
+}
+
+.project-4 .title h2 span {
+  font-size: 220px;
+}
+
+.project-4 .title h3 {
+  font-size: 60px;
+  text-transform: uppercase;
+  font-weight: 900;
+  line-height: 0.8;
+  position: relative;
+  height: 150px;
+  top: -20px;
+}
+
+.project-4 .title h3 .text-two {
+  position: absolute;
+  letter-spacing: 6px;
+}
+
+.project-4 .title h3 .text-two label {
+  position: relative;
+  font-size: 65px;
+  top: 55px;
+  left: -240px;
+}
+
+.project-4 .title p {
+  width: 1000px;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+  position: relative;
+  bottom: -70px;
+  height: 110px;
+}
+
+.project-4 .tag {
+  position: fixed;
+  top: 166px;
+  left: 70%;
+  padding: 10px 30px;
+  font-weight: 500;
+  color: grey;
+}
+
+.project-4 .line {
+  position: fixed;
+  left: 76.6%;
+  top: 200px;
+  background-color: #000;
+  width: 230px;
+  height: 1px;
+}
+
+.project-4 button {
+  font-weight: 900;
+  position: relative;
+  left: 1100px;
+  bottom: -320px;
+  background: #eda7a7;
+  color: #eee;
+  padding: 20px 30px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 10px;
+  border: none;
+}
+
+.project-4 .media {
+  position: absolute;
+  left: -80px;
+  top: 50%;
+  transform: rotate(-90deg);
+}
+
+.project-4 .media ul {
+  list-style: none;
+}
+
+.project-4 .media ul li {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.project-4 .media ul li:not(:last-child) {
+  padding-right: 60px;
+}
+
+.project-4 .left-right {
+  position: absolute;
+  right: 40px;
+  bottom: -3%;
+}
+
+.project-4 .left-right ul {
+  list-style: none;
+}
+
+.project-4 .left-right ul li {
+  display: inline-block;
+  padding: 10px 15px;
+  margin: 20px 20px 20px 0;
+  font-size: 27px;
+}
+
+@keyframes img-appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.project-4 .img::after {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: gray;
+  position: absolute;
+  animation: rev-img 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  animation-delay: 2s;
+}
+
+@keyframes rev-img {
+  0% {
+    left: 0%;
+    width: 0%;
+  }
+  50% {
+    left: 0%;
+    width: 47%;
+  }
+  100% {
+    left: 47%;
+    width: 0%;
+  }
+}
