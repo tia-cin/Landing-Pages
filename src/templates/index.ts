@@ -5,5 +5,15 @@ import Project4 from "./project-4/Project4";
 import Project5 from "./project-5/Project5";
 import Project6 from "./project-6/Project6";
 import Project7 from "./project-7/Project7";
+import Project8 from "./project-8/Project8";
 
-export { Project1, Project2, Project3, Project4, Project5, Project6, Project7 };
+export {
+  Project1,
+  Project2,
+  Project3,
+  Project4,
+  Project5,
+  Project6,
+  Project7,
+  Project8,
+};
