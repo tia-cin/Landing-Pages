@@ -4,6 +4,7 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Projects } from "./pages/Projects";
 import {
   Project1,
   Project10,
@@ -16,15 +17,18 @@ import {
   Project8,
   Project9,
 } from "./templates";
+import { Navbar } from "./components/Navbar";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
+    <Navbar />
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
+        <Route path="/templates" element={<Projects />} />
         <Route path="/templates/project-1" element={<Project1 />} />
         <Route path="/templates/project-2" element={<Project2 />} />
         <Route path="/templates/project-3" element={<Project3 />} />
@@ -35,6 +39,7 @@ root.render(
         <Route path="/templates/project-8" element={<Project8 />} />
         <Route path="/templates/project-9" element={<Project9 />} />
         <Route path="/templates/project-10" element={<Project10 />} />
+        <Route path="/templates/project-11" element={<Project10 />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
