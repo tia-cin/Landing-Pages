@@ -71,6 +71,21 @@
 
 .project-8 .img img {
   width: 42%;
+  opacity: 0;
+  animation: appear 1s linear forwards;
+  animation-delay: 3.2s;
+}
+
+.project-8 .img::after {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #bce7d9;
+  position: absolute;
+  animation: rev-img 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  animation-delay: 2.8s;
 }
 
 .project-8 .title {
@@ -81,10 +96,25 @@
   font-size: 100px;
   font-weight: 900;
   transform: translate(-50%, -50%);
+  opacity: 0;
+  animation: appear 0.0001s linear forwards;
+  animation-delay: 3.9s;
 }
 
 .project-8 .title span label {
   color: #4c5175;
+}
+
+.project-8 .title::after {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #111;
+  position: absolute;
+  animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  animation-delay: 3.5s;
 }
 
 .project-8 .sub-title {
@@ -96,6 +126,21 @@
   text-transform: uppercase;
   letter-spacing: 4px;
   font-weight: 600;
+  opacity: 0;
+  animation: appear 0.0001s linear forwards;
+  animation-delay: 5.4s;
+}
+
+.project-8 .sub-title::after {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #bce7d9;
+  position: absolute;
+  animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  animation-delay: 5s;
 }
 
 .project-8 .num {
@@ -152,4 +197,43 @@
   margin-right: 20px;
   display: inline-block;
   transform: translateY(-3px);
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes rev-img {
+  0% {
+    left: 0;
+    width: 0%;
+  }
+  50% {
+    left: 0;
+    width: 42%;
+  }
+  100% {
+    left: 42;
+    width: 0%;
+  }
+}
+
+@keyframes rev-block {
+  0% {
+    left: 0;
+    width: 0%;
+  }
+  50% {
+    left: 0;
+    width: 100%;
+  }
+  100% {
+    left: 100%;
+    width: 0%;
+  }
 }
