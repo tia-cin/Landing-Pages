@@ -2,8 +2,61 @@ import React from "react";
 import { BsCart, BsList } from "react-icons/bs";
 import picture from "../../assets/picture.png";
 import "./project-8.css";
+import { gsap, Power2, Expo } from "gsap";
 
-const Project8 = () => {
+const Project8: React.FC = () => {
+  React.useEffect(() => {
+    gsap.to(".one", {
+      duration: 2,
+      delay: 0,
+      height: "100%",
+      ease: Power2.easeInOut,
+    });
+
+    gsap.to(".two", {
+      duration: 2,
+      delay: 0.4,
+      height: "100%",
+      ease: Power2.easeInOut,
+    });
+
+    gsap.to(".three", {
+      duration: 2,
+      delay: 0.8,
+      height: "100%",
+      ease: Power2.easeInOut,
+    });
+
+    gsap.fromTo(
+      ".navbar",
+      { duration: 2, delay: 1.3, opacity: 0, y: -20 },
+      { duration: 2, delay: 1.3, opacity: 1, y: 0, ease: Expo.easeInOut }
+    );
+
+    gsap.fromTo(
+      "button",
+      { duration: 2, delay: 4.3, opacity: 0, y: 40 },
+      { duration: 2, delay: 4.3, opacity: 1, y: 0, ease: Expo.easeInOut }
+    );
+
+    gsap.fromTo(
+      ".scrolldown",
+      { duration: 2, delay: 6, opacity: 0, y: 40 },
+      { duration: 2, delay: 6, opacity: 1, y: 0, ease: Expo.easeInOut }
+    );
+
+    gsap.fromTo(
+      ".num",
+      { duration: 1.4, delay: 4.5, opacity: 0, y: -20 },
+      { duration: 1.4, delay: 4.5, opacity: 1, y: 0, ease: Expo.easeInOut }
+    );
+
+    gsap.fromTo(
+      ".media ul li",
+      { duration: 2, delay: 5, opacity: 0, y: 40 },
+      { duration: 2, delay: 5, opacity: 1, y: 0, ease: Expo.easeInOut }
+    );
+  }, []);
   return (
     <div className="project-8">
       <div className="stripes">
