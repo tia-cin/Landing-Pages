@@ -1,37 +1,37 @@
 import React from "react";
 import "./project-9.css";
 import messi from "../../assets/lionel-messi.png";
-import { BsPlay, BsList, BsArrowLeft, BsArrowRight } from "react-icons/bs";
+import { BsList } from "react-icons/bs";
 import { gsap, Expo, Power2 } from "gsap";
 
 const Project9: React.FC = () => {
   React.useEffect(() => {
     gsap.to(".block-1", {
       duration: 2,
-      x: "-70",
-      y: "-220",
+      x: "70",
+      y: "-260",
       scale: "1.8",
       ease: Expo.easeInOut,
     });
     gsap.to(".block-2", {
       duration: 2,
-      x: "-180",
+      x: "-280",
       y: "165",
-      scale: "1.4",
+      scale: "1.2",
       ease: Expo.easeInOut,
     });
     gsap.to(".block-3", {
       duration: 2,
       x: "300",
-      y: "-240",
-      scale: "1.6",
+      y: "-260",
+      scale: "1.2",
       ease: Expo.easeInOut,
     });
     gsap.to(".block-4", {
       duration: 2,
-      x: "150",
+      x: "-10",
       y: "170",
-      scale: "1.2",
+      scale: "1.4",
       ease: Expo.easeInOut,
     });
     gsap.fromTo(
@@ -75,13 +75,17 @@ const Project9: React.FC = () => {
       { duration: 2, opacity: 0 },
       { duration: 2, delay: 2.8, opacity: 2, x: 20, ease: Expo.easeInOut }
     );
-    gsap.to(".img img", {
-      duration: 2,
-      delay: 1.5,
-      opacity: 1,
-      width: "60%",
-      ease: Power2.easeInOut,
-    });
+    gsap.fromTo(
+      ".img img",
+      { duration: 2, delay: 1.5, opacity: 0 },
+      {
+        duration: 2,
+        delay: 1.5,
+        opacity: 1,
+        width: "60%",
+        ease: Power2.easeInOut,
+      }
+    );
   }, []);
   return (
     <div className="project-9">
@@ -115,25 +119,9 @@ const Project9: React.FC = () => {
 
       <div className="blocks">
         <div className="block-1 block">Lionel</div>
-        <div className="block-2 block">Messi</div>
-        <div className="block-3 block">World</div>
-        <div className="block-4 block">Champion</div>
-      </div>
-
-      <div className="watchnow btn">
-        <BsPlay className="fa-play" />
-        <p>watch now </p>
-      </div>
-
-      <div className="bottomnav left-right btn">
-        <ul>
-          <li>
-            <BsArrowLeft />
-          </li>
-          <li>
-            <BsArrowRight />
-          </li>
-        </ul>
+        <div className="block-2 block">World</div>
+        <div className="block-3 block">Champion</div>
+        <div className="block-4 block">Messi</div>
       </div>
     </div>
   );

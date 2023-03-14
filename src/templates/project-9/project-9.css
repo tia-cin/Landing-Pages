@@ -50,20 +50,32 @@
   font-family: "poppins", sans-serif;
   text-align: center;
   color: transparent;
+  letter-spacing: 80px;
   -webkit-text-stroke: 3px #444;
   text-transform: uppercase;
 }
 
 .project-9 .img img {
   width: 67%;
-  opacity: 0;
+  /* opacity: 0; */
 }
 
 .project-9 .img {
   position: fixed;
   z-index: 1;
-  top: -23%;
-  right: -444px;
+  top: 23%;
+  right: 556px;
+}
+
+.project-9 .img::after {
+  background: rgba(22, 22, 22, 0.4);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
 }
 
 .project-9 .navbar {
@@ -89,53 +101,6 @@
 
 .project-9 .navbar .menu i {
   padding-right: 20px;
-}
-
-.project-9 .watchnow {
-  position: absolute;
-  top: 55%;
-  right: 12%;
-  transform: translateY(-40%);
-  z-index: 2;
-  background: #0077b6;
-  padding: 10px 30px 10px 30px;
-  border-radius: 30px;
-  align-items: center;
-}
-
-.project-9 .watchnow a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 17px;
-  font-weight: 600;
-  text-transform: uppercase;
-  border-bottom: 2px solid #fff;
-  padding-bottom: 1px;
-}
-
-.project-9 .fa-play {
-  color: #fff;
-  font-size: 30px;
-  margin-right: 15px;
-}
-
-.project-9 .bottomnav {
-  position: absolute;
-  bottom: 22%;
-  right: 55%;
-  z-index: 1;
-}
-
-.project-9 .bottomnav ul {
-  list-style: none;
-}
-
-.project-9 .bottomnav ul li {
-  display: inline-block;
-  padding: 10px 15px;
-  margin: 20px 20px 20px 0;
-  color: #fff;
-  background: #2a2a2a;
 }
 
 .project-9 .blocks {
