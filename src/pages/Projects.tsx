@@ -1,12 +1,13 @@
 import React from "react";
 import { useLocation, Link } from "react-router-dom";
+import { Navbar } from "../components/Navbar";
 
 export const Projects: React.FC = () => {
   const { search } = useLocation();
   const allItems: number[] = [1, 2, 3, 4, 5, 6, 7, 8];
 
   if (search.includes("all")) {
-    allItems.push(8, 9, 10, 11, 12, 14, 15);
+    allItems.push(9, 10, 11, 12, 14, 15);
   }
 
   return (
@@ -16,6 +17,7 @@ export const Projects: React.FC = () => {
         search.includes("all") && "bg-light-gray"
       }`}
     >
+      {search.includes("all") && <Navbar />}
       <h2 className="text-3xl font-bold mt-20">Templates</h2>
       <div className="grid grid-cols-4 gap-28 mt-10">
         {allItems.map((e) => (
