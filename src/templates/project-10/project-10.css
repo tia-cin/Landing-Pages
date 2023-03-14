@@ -13,14 +13,6 @@
 .project-10 ul {
   list-style: none;
 }
-
-.project-10 .bg {
-  position: absolute;
-  left: 0%;
-  width: 0%;
-  height: 100%;
-  z-index: -1;
-}
 /* NAVBAR
 =========================== */
 .project-10 .navbar {

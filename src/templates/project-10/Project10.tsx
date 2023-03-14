@@ -3,11 +3,50 @@ import { BsList, BsSearch, BsArrowUp, BsArrowDown } from "react-icons/bs";
 import model from "../../assets/model-vacation.png";
 import vacation from "../../assets/vacation.png";
 import "./project-10.css";
+import { gsap, Expo } from "gsap";
 
-const Project10 = () => {
+const Project10: React.FC = () => {
+  React.useEffect(() => {
+    gsap.to(".bg", { duration: 2, width: "100%", ease: Expo.easeInOut });
+
+    gsap.fromTo(
+      ".navbar",
+      { duration: 1.5, delay: 2.5, opacity: 0 },
+      { duration: 1.5, delay: 2.5, opacity: 1, y: 20, ease: Expo.easeInOut }
+    );
+
+    gsap.fromTo(
+      ".media ul li",
+      { duration: 1.5, delay: 2.8, opacity: 0 },
+      { duration: 1.5, delay: 2.8, opacity: 1, x: -30, ease: Expo.easeInOut }
+    );
+
+    gsap.fromTo(
+      ".text h1 .text-bar",
+      { duration: 1.5, delay: 1.6, y: "100%" },
+      { duration: 1.5, delay: 1.6, y: 0, ease: Expo.easeInOut }
+    );
+
+    gsap.fromTo(
+      ".text p .text-bar",
+      { duration: 1.5, delay: 2, y: "100%" },
+      { duration: 1.5, delay: 2, y: 0, ease: Expo.easeInOut }
+    );
+
+    gsap.fromTo(
+      ".bottomnav",
+      { duration: 1.5, delay: 3.2, opacity: 0, y: 30 },
+      { duration: 1.5, delay: 3.2, opacity: 1, y: 0, ease: Expo.easeInOut }
+    );
+
+    gsap.fromTo(
+      ".bottomnav .next",
+      { duration: 1.5, delay: 3.5, opacity: 0, x: -20, ease: Expo.easeInOut },
+      { duration: 1.5, delay: 3.5, opacity: 1, x: 0 }
+    );
+  }, []);
   return (
     <div className="project-10">
-      <div className="bg"></div>
       <nav className="navbar">
         <div className="logo">Summer</div>
         <div className="menu-item">
