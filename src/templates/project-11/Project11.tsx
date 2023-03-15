@@ -25,7 +25,6 @@ const Project11: React.FC = () => {
         y: -200,
         scrollTrigger: {
           toggleActions: "play none reverse none",
-          markers: true,
           start: "80% 30%",
         },
       },
@@ -36,7 +35,6 @@ const Project11: React.FC = () => {
         ease: Expo.easeInOut,
         scrollTrigger: {
           toggleActions: "play none reverse none",
-          markers: true,
           start: "30%",
         },
       }
