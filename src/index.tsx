@@ -8,6 +8,7 @@ import { Projects } from "./pages/Projects";
 import {
   Project1,
   Project10,
+  Project11,
   Project2,
   Project3,
   Project4,
@@ -37,7 +38,7 @@ root.render(
         <Route path="/templates/project-8" element={<Project8 />} />
         <Route path="/templates/project-9" element={<Project9 />} />
         <Route path="/templates/project-10" element={<Project10 />} />
-        {/* <Route path="/templates/project-11" element={<Project11 />} /> */}
+        <Route path="/templates/project-11" element={<Project11 />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

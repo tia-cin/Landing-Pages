@@ -1,0 +1,157 @@
+.project-11 {
+  background-color: #dbad84;
+  height: 100%;
+  line-height: 1.5;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  min-height: 100%;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+.project-11 .section {
+  min-height: 100vh;
+}
+
+.project-11 img {
+  max-width: 100%;
+}
+
+.project-11 h1,
+.project-11 h2,
+.project-11 h3,
+.project-11 h4 {
+  font-family: "Abril Fatface", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+}
+
+.project-11 h1 {
+  font-size: 9vw;
+  line-height: 1;
+  margin-top: 0;
+}
+
+.project-11 .contain {
+  margin: 0 10%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.project-11 .hero-text {
+  width: 80%;
+  float: left;
+  margin-top: 100px;
+}
+
+.project-11 .hero-title span {
+  position: absolute;
+  top: 70%;
+  background-color: coral;
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.project-11 .cat {
+  font-size: 18px;
+  letter-spacing: 2px;
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #fff;
+  margin-top: 30px;
+}
+
+.project-11 .cat:after {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  content: "";
+  width: 50px;
+  height: 1px;
+  background-color: #fff;
+  margin-left: 5px;
+}
+
+.project-11 .cat.margin-bottom {
+  margin-bottom: 1rem;
+}
+
+.project-11 .description {
+  letter-spacing: 1px;
+  width: 100%;
+  float: left;
+  margin-bottom: 1rem;
+}
+
+.project-11 .description p {
+  font-family: "Lato", sans-serif;
+  font-size: 1.2rem;
+}
+
+.project-11 #bg {
+  z-index: 2;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+}
+
+.project-11 #bg img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  width: 400px;
+}
+
+.project-11 .image-one {
+  width: 600px;
+  float: left;
+  margin-right: 50%;
+  margin-bottom: 50px;
+}
+
+.project-11 .image-two {
+  width: 600px;
+  float: left;
+  margin-right: 50%;
+  margin-bottom: 50px;
+}
+
+.project-11 .image-three {
+  width: 600px;
+  float: left;
+  margin-right: 50%;
+  margin-bottom: 50px;
+}
+
+.project-11 .image-four {
+  width: 600px;
+  float: left;
+  margin-right: 50%;
+  margin-bottom: 50px;
+}
+
+@media (min-width: 1280px) {
+  .description {
+    width: 50%;
+  }
+}
+
+@media (min-width: 600px) {
+  .hero-text {
+    width: 50%;
+  }
+  .image-one {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+}
