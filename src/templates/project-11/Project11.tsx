@@ -5,8 +5,43 @@ import three from "../../assets/11-3.png";
 import four from "../../assets/11-4.png";
 import five from "../../assets/11-5.png";
 import "./project-11.css";
+import { gsap, Expo } from "gsap";
+import { ScrollTrigger } from "gsap/all";
 
-const Project11 = () => {
+gsap.registerPlugin(ScrollTrigger);
+
+const Project11: React.FC = () => {
+  React.useEffect(() => {
+    gsap.fromTo(
+      "#bg img",
+      { opacity: 0, duration: 1 },
+      { opacity: 1, duration: 1, ease: Expo.easeInOut }
+    );
+    gsap.fromTo(
+      "#bg img",
+      {
+        duration: 2,
+        opacity: 1,
+        y: -200,
+        scrollTrigger: {
+          toggleActions: "play none reverse none",
+          markers: true,
+          start: "80% 30%",
+        },
+      },
+      {
+        duration: 2,
+        opacity: 0,
+        y: 1000,
+        ease: Expo.easeInOut,
+        scrollTrigger: {
+          toggleActions: "play none reverse none",
+          markers: true,
+          start: "30%",
+        },
+      }
+    );
+  }, []);
   return (
     <div className="project-11">
       <div className="section" id="section1">
