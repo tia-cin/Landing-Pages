@@ -48,7 +48,7 @@ const Project10: React.FC = () => {
   return (
     <div className="project-10">
       <nav className="navbar">
-        <div className="logo">Summer</div>
+        <div className="logo">brand</div>
         <div className="menu-item">
           <ul>
             <li>Home</li>
@@ -79,15 +79,15 @@ const Project10: React.FC = () => {
       <div className="text">
         <h1>
           <span className="text-bar">
-            Breathe in <label> the sea</label>
+            Dolore nis <label>amet aute </label>
           </span>
         </h1>
         <p>
-          <span className="text-bar">get the summer body</span>
+          <span className="text-bar">sint reprehenderit</span>
         </p>
       </div>
       <div className="bottomnav">
-        <div className="next">up next</div>
+        <div className="next">up down</div>
 
         <div className="nav">
           <ul>
