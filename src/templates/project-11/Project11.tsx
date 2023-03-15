@@ -31,7 +31,7 @@ const Project11: React.FC = () => {
       {
         duration: 2,
         opacity: 0,
-        y: 1000,
+        x: 600,
         ease: Expo.easeInOut,
         scrollTrigger: {
           toggleActions: "play none reverse none",
