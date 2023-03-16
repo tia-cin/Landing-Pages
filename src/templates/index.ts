@@ -11,6 +11,7 @@ import Project10 from "./project-10/Project10";
 import Project11 from "./project-11/Project11";
 import Project12 from "./project-12/Project12";
 import Project13 from "./project-13/Project13";
+import Project14 from "./project-14/Project14";
 
 export {
   Project1,
@@ -26,4 +27,5 @@ export {
   Project11,
   Project12,
   Project13,
+  Project14,
 };
