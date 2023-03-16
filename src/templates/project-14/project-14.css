@@ -1,6 +1,13 @@
 .project-14 {
   background: #eee;
-  overflow-x: hidden;
+  overflow: hidden;
+}
+
+.project-14 h1 {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 50px;
+  z-index: 2;
 }
 
 .project-14 .gridBlock {
@@ -43,7 +50,6 @@
   left: 20vw;
   width: 10vw;
   height: 10vw;
-  background: #c9f2c7;
 }
 @media only screen and (max-width: 580px) {
   .gridLayer:nth-child(1) .gridBlock {
@@ -58,7 +64,6 @@
   left: 32.5vw;
   width: 15vw;
   height: 15vw;
-  background: #aceca1;
 }
 @media only screen and (max-width: 580px) {
   .gridLayer:nth-child(2) .gridBlock {
@@ -73,7 +78,6 @@
   top: 25vw;
   width: 15vw;
   height: 15vw;
-  background: #96be8c;
 }
 @media only screen and (max-width: 580px) {
   .gridLayer:nth-child(3) .gridBlock {
@@ -88,7 +92,6 @@
   left: 17.5vw;
   width: 30vw;
   height: 30vw;
-  background: #269460;
 }
 @media only screen and (max-width: 580px) {
   .gridLayer:nth-child(4) .gridBlock {
@@ -106,7 +109,6 @@
   left: 50vw;
   width: 5vw;
   height: 5vw;
-  background: #243119;
 }
 @media only screen and (max-width: 580px) {
   .gridLayer:nth-child(5) .gridBlock {
@@ -135,7 +137,6 @@
   top: 27.5vw;
   width: 20vw;
   height: 20vw;
-  background: #aceca1;
 }
 @media only screen and (max-width: 580px) {
   .gridLayer:nth-child(6) .gridBlock {
@@ -150,7 +151,6 @@
   top: 42.5vw;
   width: 5vw;
   height: 5vw;
-  background: #269460;
 }
 @media only screen and (max-width: 580px) {
   .gridLayer:nth-child(7) .gridBlock {
@@ -162,7 +162,6 @@
   left: 42.5vw;
   width: 5vw;
   height: 5vw;
-  background: #c9f2c7;
 }
 @media only screen and (max-width: 580px) {
   .gridLayer:nth-child(8) .gridBlock {
@@ -174,7 +173,6 @@
   left: 50vw;
   width: 10vw;
   height: 10vw;
-  background: #243119;
 }
 @media only screen and (max-width: 580px) {
   .gridLayer:nth-child(9) .gridBlock {
