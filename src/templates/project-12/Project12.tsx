@@ -5,7 +5,7 @@ import three from "../../assets/12-3.png";
 import four from "../../assets/12-4.png";
 import five from "../../assets/12-5.png";
 import "./project-12.css";
-import { gsap, Expo } from "gsap";
+import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 
 gsap.registerPlugin(ScrollTrigger);

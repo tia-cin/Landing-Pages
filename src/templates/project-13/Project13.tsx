@@ -1,12 +1,77 @@
 import React from "react";
 import "./project-13.css";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/all";
+import { ScrollToPlugin } from "gsap/all";
 
-const Project13 = () => {
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+
+const Project13: React.FC = () => {
+  React.useEffect(() => {
+    const sections = document.querySelectorAll("section");
+
+    const scrolling = {
+      enabled: true,
+      events: "scroll,wheel,touchmove,pointermove".split(","),
+      prevent: (e: Event) => e.preventDefault(),
+      disable: () => {
+        if (scrolling.enabled) {
+          scrolling.enabled = false;
+          window.addEventListener("scroll", gsap.ticker.tick, {
+            passive: true,
+          });
+          scrolling.events.forEach((e, i) =>
+            (i ? document : window).addEventListener(e, scrolling.prevent, {
+              passive: false,
+            })
+          );
+        }
+      },
+      enable: () => {
+        if (!scrolling.enabled) {
+          scrolling.enabled = true;
+          window.removeEventListener("scroll", gsap.ticker.tick);
+          scrolling.events.forEach((e, i) =>
+            (i ? document : window).removeEventListener(e, scrolling.prevent)
+          );
+        }
+      },
+    };
+
+    const goToSection = (section: any, anim?: any, i?: number) => {
+      if (scrolling.enabled) {
+        scrolling.disable();
+        gsap.to(window, {
+          scrollTo: { y: section, autoKill: false },
+          onComplete: scrolling.enable,
+          duration: 1,
+        });
+
+        anim && anim.restart();
+      }
+    };
+
+    sections.forEach((section: any, i: number) => {
+      const intoAnim = gsap.fromTo(
+        section.querySelector(".right-col"),
+        { yPercent: 50, duration: 1, paused: true },
+        { yPercent: 0, duration: 1 }
+      );
+
+      ScrollTrigger.create({
+        trigger: section,
+        start: "top bottom-=1",
+        end: "bottom top+=1",
+        onEnter: () => goToSection(section, intoAnim, i),
+        onEnterBack: () => goToSection(section),
+      });
+    });
+  }, []);
   return (
     <div className="project-13">
       <section id="landing-page" className="hero-story hero hero1">
         <div className="full-col width-100">
-          <h2>Incididunt proident labore </h2>
+          <h2>Scroll down </h2>
         </div>
       </section>
 
@@ -41,7 +106,7 @@ const Project13 = () => {
       </section>
 
       <footer className="hero-story hero second-hero hero5">
-        <h2>Aliquip magna officia </h2>
+        <h2>That's it. You can scroll up to top </h2>
       </footer>
     </div>
   );
