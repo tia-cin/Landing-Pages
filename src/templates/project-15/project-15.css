@@ -1,30 +1,54 @@
 .project-15 {
   background-color: #8e72ab;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+.project-15 h1 {
+  position: fixed;
+  left: 40%;
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+.project-15 h1:last-child {
+  bottom: 0;
+  left: 48%;
 }
 
 .project-15 .glock {
   position: relative;
-  padding: 20px;
-}
-.project-15 .piece:not(.base) {
-  position: absolute;
-  bottom: 53vw;
-}
-/* Widths come from comparison of full size width to base's width */
-.project-15 .slide {
-  width: 92.083%;
-}
-.project-15 .barrel {
-  width: 54.25%;
-  left: 7.5%;
-}
-.project-15 .spring {
-  width: 40.333%;
-  left: 8.5%;
-}
-.project-15 .base {
-  width: 100%;
-  position: relative;
-  left: 3%;
+  min-height: 200vh;
+  left: 35%;
+  padding-top: 250px;
   z-index: 1;
+}
+
+.project-15 .one,
+.project-15 .two,
+.project-15 .three {
+  position: fixed;
+}
+
+.project-15 .three img {
+  position: relative;
+  width: 350px;
+  top: -200px;
+  left: 20%;
+}
+
+.project-15 .two img {
+  position: relative;
+  width: 200px;
+  top: -20px;
+  left: 70%;
+  z-index: -1;
+}
+
+.project-15 .one img {
+  position: relative;
+  width: 60px;
+  top: 120px;
+  left: 355%;
+  z-index: -2;
 }
