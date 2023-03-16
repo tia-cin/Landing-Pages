@@ -37,7 +37,7 @@ const Project12: React.FC = () => {
             start: () => (i ? "top bottom" : "top top"),
             end: "bottom top",
             scrub: true,
-            invalidateOnRefresh: true, // to make it responsive
+            invalidateOnRefresh: true,
           },
         }
       );

@@ -7,7 +7,7 @@ export const Projects: React.FC = () => {
   const allItems: number[] = [1, 2, 3, 4, 5, 6, 7, 8];
 
   if (search.includes("all")) {
-    allItems.push(9, 10, 11, 12, 14, 15);
+    allItems.push(9, 10, 11, 12, 13, 14, 15);
   }
 
   return (

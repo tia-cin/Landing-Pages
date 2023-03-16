@@ -1,0 +1,66 @@
+.project-13 {
+  overflow-x: hidden;
+}
+.project-13 section,
+.project-13 footer {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+.project-13 section > div,
+.project-13 footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-13 h2 {
+  font-size: 25px;
+  text-transform: uppercase;
+}
+.project-13 .left-col,
+.project-13 .middle-col,
+.project-13 .right-col,
+.project-13 .full-col {
+  height: 100vh;
+  margin: 0;
+}
+.project-13 .width-0 {
+  width: 0;
+}
+.project-13 .width-33 {
+  width: 33.33%;
+}
+.project-13 .width-66 {
+  width: 66.66%;
+}
+.project-13 .width-100 {
+  width: 100%;
+}
+.project-13 #landing-page .full-col {
+  background-color: grey;
+}
+.project-13 #rooms .left-col {
+  background-color: red;
+}
+.project-13 #rooms .right-col {
+  background-color: pink;
+}
+.project-13 #you .middle-col {
+  background-color: green;
+}
+.project-13 #you .left-col,
+.project-13 #you .right-col {
+  background-color: palegreen;
+}
+.project-13 #near .right-col {
+  background-color: blue;
+}
+.project-13 #near .left-col {
+  background-color: lightblue;
+}
+.project-13 footer {
+  background-color: black;
+  color: white;
+}
