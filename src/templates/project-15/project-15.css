@@ -1,0 +1,30 @@
+.project-15 {
+  background-color: #8e72ab;
+}
+
+.project-15 .glock {
+  position: relative;
+  padding: 20px;
+}
+.project-15 .piece:not(.base) {
+  position: absolute;
+  bottom: 53vw;
+}
+/* Widths come from comparison of full size width to base's width */
+.project-15 .slide {
+  width: 92.083%;
+}
+.project-15 .barrel {
+  width: 54.25%;
+  left: 7.5%;
+}
+.project-15 .spring {
+  width: 40.333%;
+  left: 8.5%;
+}
+.project-15 .base {
+  width: 100%;
+  position: relative;
+  left: 3%;
+  z-index: 1;
+}
