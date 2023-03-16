@@ -12,6 +12,7 @@ import {
   Project12,
   Project13,
   Project14,
+  Project15,
   Project2,
   Project3,
   Project4,
@@ -45,6 +46,7 @@ root.render(
         <Route path="/templates/project-12" element={<Project12 />} />
         <Route path="/templates/project-13" element={<Project13 />} />
         <Route path="/templates/project-14" element={<Project14 />} />
+        <Route path="/templates/project-15" element={<Project15 />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
