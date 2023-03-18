@@ -38,7 +38,7 @@ const Project13: React.FC = () => {
       },
     };
 
-    const goToSection = (section: any, anim?: any, i?: number) => {
+    const goToSection = (section: any, anim?: any) => {
       if (scrolling.enabled) {
         scrolling.disable();
         gsap.to(window, {
@@ -62,7 +62,7 @@ const Project13: React.FC = () => {
         trigger: section,
         start: "top bottom-=1",
         end: "bottom top+=1",
-        onEnter: () => goToSection(section, intoAnim, i),
+        onEnter: () => goToSection(section, intoAnim),
         onEnterBack: () => goToSection(section),
       });
     });

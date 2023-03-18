@@ -12,7 +12,6 @@ const Project15: React.FC = () => {
           trigger: ".glock",
           start: "top top",
           end: "bottom bottom",
-          markers: true,
           scrub: true,
         },
       })
